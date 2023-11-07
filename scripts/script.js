@@ -101,11 +101,11 @@ function calc() {
     let celsius = parseFloat(celsiusInput);
     let fahrenheit = parseFloat(fahrenheitInput);
 
-    if(celsiusInput === "69.69"){
+    if(celsius === 69.69){
         window.open("https://www.reddit.com/r/Spengergasse/", "_blank");
     }
 
-    if(fahrenheitInput === "69.69"){
+    if(fahrenheit === 69.69){
         window.open("https://www.reddit.com/r/Spengergasse/", "_blank");
     }
 
