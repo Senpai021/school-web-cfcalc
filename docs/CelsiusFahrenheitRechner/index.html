@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html id="h" lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperatur-Rechner</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="left-column">
+        <input id="lsw" onclick="switchLanguage()" type="button" value="Sprache ändern [de]">
+        <label for="celsius" id="idCelsius">Grad Celsius</label>
+        <input id="celsius" type="text">
+        <input id="tempCalc" onclick="calc()" type="button" value="Fahrenheit berechnen">
+    </div>
+    <div class="middle-column">
+        <span id="equalSym">=</span>
+    </div>
+    <div class="right-column">
+        <label for="fahrenheit" id="idFahrenheit">Grad Fahrenheit</label>
+        <input id="fahrenheit" type="text" disabled>
+    </div>
+</div>
+</body>
+</html>
