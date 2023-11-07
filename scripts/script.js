@@ -100,18 +100,14 @@ function calc() {
     let fahrenheitInput = document.getElementById("fahrenheit").value;
     let celsius = parseFloat(celsiusInput);
     let fahrenheit = parseFloat(fahrenheitInput);
-
-    let celsiusInput = document.getElementById("celsius").value;
-    let fahrenheitInput = document.getElementById("fahrenheit").value;
-    let celsius = parseFloat(celsiusInput);
-    let fahrenheit = parseFloat(fahrenheitInput);
     
     if (celsius === 69.69 || fahrenheit === 69.69) {
         window.open("https://www.reddit.com/r/Spengergasse/", "_blank");
     }
     
-    if (celsius === 69.69 || fahrenheit === 69.69) {
+    if (celsius === 15.01 || fahrenheit === 15.01) {
         createYouTubeIframe();
+        console.log("works, hopefully");
     }
 
     // Check for empty inputs
