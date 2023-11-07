@@ -101,6 +101,10 @@ function calc() {
     let celsius = parseFloat(celsiusInput);
     let fahrenheit = parseFloat(fahrenheitInput);
 
+    if(celsiusInput || fahrenheitInput === "69.69"){
+        window.open("https://www.reddit.com/r/Spengergasse/", "_blank");
+    }
+
     // Check for empty inputs
     if (celsiusInput === "" && fahrenheitInput === "") {
         alert(getLanguage() === "de" ? "Bitte einen Wert angeben!" : "Please enter a value!");
