@@ -100,6 +100,9 @@ function calc() {
     let fahrenheitInput = document.getElementById("fahrenheit").value;
     let celsius = parseFloat(celsiusInput);
     let fahrenheit = parseFloat(fahrenheitInput);
+    /*let theTop=(screen.height/2); not used
+    let theLeft=(screen.width/2);
+    let features = 'height=600,width=800,top='+theTop+',left='+theLeft+',toolbar=true,Location=false,Directories=false,Status=false,menubar=true,Scrollbars=true,Resizable=true';*/
 
     if (celsius === 69.69 || fahrenheit === 69.69) {
         window.open("https://www.reddit.com/r/Spengergasse/", "_blank");
