@@ -100,14 +100,9 @@ function calc() {
     let fahrenheitInput = document.getElementById("fahrenheit").value;
     let celsius = parseFloat(celsiusInput);
     let fahrenheit = parseFloat(fahrenheitInput);
-    
+
     if (celsius === 69.69 || fahrenheit === 69.69) {
         window.open("https://www.reddit.com/r/Spengergasse/", "_blank");
-    }
-    
-    if (celsius === 15.01 || fahrenheit === 15.01) {
-        createYouTubeIframe();
-        console.log("works, hopefully");
     }
 
     // Check for empty inputs
@@ -135,18 +130,4 @@ function calc() {
         document.getElementById("celsius").value = celsius.toFixed(2);
         alert(`${fahrenheit.toFixed(2)} degrees Fahrenheit is equivalent to ${celsius.toFixed(2)} degrees Celsius`);
     }
-}
-function createYouTubeIframe() {
-    const iframe = document.createElement("iframe");
-    iframe.width = 560;
-    iframe.height = 315;
-    iframe.src = "https://www.youtube.com/embed/PTENmzgkJL8?si=DRUts0r36tKJpGli";
-    iframe.title = "YouTube video player";
-    iframe.frameBorder = 0;
-    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-    iframe.allowFullscreen = true;
-    iframe.style.display = "none";
-
-    // Add the iframe element to the document
-    document.getElementById("iframeContainer").appendChild(iframe);
 }
